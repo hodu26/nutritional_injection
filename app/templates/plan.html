@@ -1,0 +1,18 @@
+{% extends 'base2.html' %}
+{% block content %}
+<div class="plan-container">
+<form action="/planing">
+    <button class="plan-button" type="submit" >계획</button>
+</form>
+{% if plan_list %}
+    <ul>
+    {% for plan in plan_list %}
+        <li><a href="/plan/{{ plan.id }}/">{{ plan.subject }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>새 계획을 등록하세요!</p>
+{% endif %}
+</div>
+
+{% endblock %}

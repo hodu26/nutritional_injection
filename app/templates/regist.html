@@ -1,0 +1,22 @@
+{% extends 'base1.html' %}
+{% block content %}
+<body>
+    <div>
+        <h2>Register</h2>
+        <form method="post">
+            <ul>
+                <li><input type="text" name="ID" placeholder="ID"></li>
+                <li><input type="password" name="Password" placeholder="Password"></li>
+                <li><input type="password" name="verify" placeholder="verify"></li>
+                <li><input type="text" name="name" placeholder="Name"></li>
+                <li><input type="text" name="nickname" placeholder="Nickname"></li>
+                <li><input type="text" name="PhoneNumber" placeholder="Phone number"></li>
+                <li><input type="" name="userPassword" placeholder="Password"></li>
+            </ul>
+                <input type="radio" name="gender" value="man">남
+                <input type="radio" name="gender" value="woman">여
+                <input type="submit" value="Regist">
+        </form>
+    </div>
+</body>
+{% endblock %}

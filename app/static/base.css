@@ -1,0 +1,92 @@
+/* Reset some default styling */
+body{
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    margin:0;
+    overflow: hidden;
+    height: 70px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.nav-container {
+    height: 70px;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+
+.home-container li{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.home-container h2{
+    display: flex;
+    justify-content: center;
+}
+
+.home-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-bear{
+    display: flex;
+    justify-content: center;
+}
+
+/* 여기서부터 캘린더*/
+
+/* 여기서부터 플랜*/
+.plan-container{
+    display: flex;
+    justify-content: center;
+}
+
+.plan-button{
+    background-color: #c2c6c6;
+    border-color: #575757;
+    border-radius: 15px;
+    padding: 50px 500px;
+}
+
+.mypage-container{
+    display: flex;
+    justify-content: center;
+}
+
+.mypage-information{
+    padding: 50px;
+}
+
+.notice-container{
+    display:flex;
+    flex-direction: column;
+}

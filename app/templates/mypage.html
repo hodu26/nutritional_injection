@@ -1,0 +1,19 @@
+{% extends 'base2.html' %}
+{% block content %}
+<div class="mypage-container">
+<img src="{{ url_for('static', filename='bear.png') }}" width = 200 height="400">
+<div class="mypage-information">
+<h3>회원정보</h3>
+<p>이름: 담곰이</p>
+<p>이메일: damgomy456@gommail.com</p>
+<p>닉네임: 담곰이</p>
+<p>비밀번호 수정</p>
+<input type="password">
+<form action="">
+</form>
+<form action="">
+</form>
+</div>
+</div>
+
+{% endblock %}

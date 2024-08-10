@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <title>Diagram</title>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='base.css') }}">
+</head>
+<body>
+<nav>
+    <ul class="nav-container">
+        <h2><a href="/home">Logo</a></h2>
+        <li class="nav-item"><a href="{{ url_for('main.calendar') }}">캘린더</a></li>
+        <li class="nav-item"><a href="{{ url_for('main.plan') }}">플랜</a></li>
+        <li class="nav-item"><a href="{{ url_for('main.board') }}">게시판</a></li>
+        <li class="nav-item"><a href="{{ url_for('main.contest') }}">내기</a></li>
+        <li class="nav-item"><a href="{{ url_for('main.notice') }}">공지사항</a></li>
+        <li class="nav-item"><a href="{{ url_for('main.mypage') }}">마이페이지</a></li>
+    </ul>
+</nav>
+{% block content %}
+{% endblock %}
+</body>

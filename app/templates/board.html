@@ -1,0 +1,17 @@
+{% extends 'base2.html' %}
+{% block content %}
+{% if question_list %}
+    <ul>
+    {% for question in question_list %}
+        <li><a href="/detail/{{ question.id }}/">{{ question.subject }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>게시물이 없습니다.</p>
+{% endif %}
+
+</ul>
+<form action="/write">
+    <input type="submit" value="글쓰기">
+</form>
+{% endblock %}

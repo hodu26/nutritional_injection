@@ -1,0 +1,27 @@
+{% extends 'base2.html' %}
+{% block content %}
+<!--실제 구현할때는 켈린더 api로 구현-->
+<div class="calendar-container">
+<img src="{{ url_for('static', filename='calendar.png') }}" height="500" width="600">
+<ul>
+    <li>아침
+        <form class="">
+            <input type="text" name="" placeholder="검색어를 입력해주세요">
+            <button type="submit">
+        </form>
+    </li>
+    <li>점심
+        <form class="food-search">
+            <input type="text" name="" placeholder="검색어를 입력해주세요">
+            <button type="submit">
+        </form>
+    </li>
+    <li>저녁
+        <form class="food-search">
+            <input type="text" name="" placeholder="검색어를 입력해주세요">
+            <button type="submit">
+        </form>
+    </li>
+</ul>
+</div>
+{% endblock %}

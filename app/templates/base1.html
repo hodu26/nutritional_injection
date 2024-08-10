@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='base.css') }}">
+    <title>Diagram</title>
+</head>
+<body>
+<nav>
+    <ul class="nav-container">
+        <h2><a href="/">Logo</a></h2>
+        <div class = "nav-right">
+        <li class = "nav-item"><a href="{{ url_for('main.login') }}">로그인</a></li>
+        <li class = "nav-item"><a href="{{ url_for('main.regist') }}">회원가입</a></li>
+        </div>
+    </ul>
+</nav>
+{% block content %}
+{% endblock %}
+</body>

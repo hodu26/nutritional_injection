@@ -1,0 +1,14 @@
+{% extends 'base2.html' %}
+{% block content %}
+<div class="home-container">
+<h2>식단에 따른 영양성분 정보</h2>
+<ul class="home-item">
+    <li>아침: 500 kcal</li>
+    <li>점심: 900 kcal</li>
+    <li>저녁: 900 kcal</li>
+</ul>
+</div>
+<div class="home-bear">
+<img src="{{ url_for('static', filename='bear.png') }}" width = 200 height="400">
+</div>
+{% endblock %}

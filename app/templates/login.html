@@ -1,0 +1,13 @@
+{% extends 'base1.html' %}
+{% block content %}
+<div>
+    <h2>Login</h2>
+    <form method="post">
+        <input type="text" name="userName" placeholder="ID">
+        <input type="password" name="userPassword" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
+</div>
+<a href="{{ url_for('main.home') }}">아이디/비밀번호를 잊으셨나요?</a>
+<a href="{{ url_for('main.regist') }}">아직 회원가입을 안하셨나요?</a>
+{% endblock %}
